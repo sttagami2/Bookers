@@ -9,5 +9,6 @@ class User < ApplicationRecord
         #  :rememberable（ログイン情報を保存）
         #  :validatable（emailのフォーマットなどのバリデーション）
 
+        attachment :image
         has_many :books, dependent: :destroy
 end
