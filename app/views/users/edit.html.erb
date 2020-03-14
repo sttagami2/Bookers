@@ -1,0 +1,38 @@
+<section>
+  <div class="container">
+  <h2>User info</h2>
+
+  <%# form_for %>
+  <%= form_for(@users) do |f| %>
+    <p>Name</p>
+    <%= f.text_field :name %>
+    <%# title情報が反映されている入力フォームを下に作成 %>
+
+    <p>Image</p>
+    <%= f.text_fiaeld :profile_image_id %>
+    <%# body情報が反映されている入力フォームを下に作成 %>
+    
+    <div class=".row">
+    <div class=.col>
+      <p>Introduction</p>
+    </div>
+    <div class=".col">
+      <%= f.text_area :Introduction %>
+    </div>
+
+    <%= f.submit 'Update User' %>
+  <% end %>
+<%# form_for %>
+</section>
+
+<%# 共通のfooter %>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-3 col-xs-offset-9">
+        <p>CopyRight Infratop.inc</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<%# 共通のfooter %>

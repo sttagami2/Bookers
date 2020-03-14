@@ -1418,3 +1418,1095 @@ Did you mean?  new_user_password_path):
     31:             <%= link_to 'Books', user_path(current_user.id) %>
   
 app/views/layouts/application.html.erb:28:in `_app_views_layouts_application_html_erb__760462165292267068_69916755717660'
+Started GET "/" for 10.0.2.2 at 2020-03-13 06:30:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (2.1ms)
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:23
+Completed 500 Internal Server Error in 1963ms (ActiveRecord: 11.1ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_post_image_path' for #<#<Class:0x00000000059b3ac0>:0x00007f1c40506d20>
+Did you mean?  new_user_password_path):
+    25:             <%= link_to "Home", destroy_user_session_path, method: :delete %>
+    26:           </li>
+    27:           <li class="">
+    28:             <%= link_to 'Users', new_post_image_path %>
+    29:           </li>
+    30:           <li class="">
+    31:             <%= link_to 'Books', user_path(current_user.id) %>
+  
+app/views/layouts/application.html.erb:28:in `_app_views_layouts_application_html_erb__3188113005660101819_69879657455920'
+Started GET "/" for 10.0.2.2 at 2020-03-13 06:37:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 135ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/vagrant/work/bookers/app/views/layouts/application.html.erb:25: syntax error, unexpected ','
+...ffer.append=( link_to "Home", , show_user_path method: :show...
+...                              ^):
+  
+app/views/layouts/application.html.erb:25: syntax error, unexpected ','
+Started GET "/" for 10.0.2.2 at 2020-03-13 06:38:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 80ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/vagrant/work/bookers/app/views/layouts/application.html.erb:25: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+... "Home", show_user_path method: :show );@output_buffer.safe_...
+...                        ^~~~~~~):
+  
+app/views/layouts/application.html.erb:25: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+Started GET "/" for 10.0.2.2 at 2020-03-13 06:39:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 68ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/vagrant/work/bookers/app/views/layouts/application.html.erb:25: syntax error, unexpected tLABEL, expecting ')'
+...r_path(current_user.id) method: :show );@output_buffer.safe_...
+...                        ^~~~~~~):
+  
+app/views/layouts/application.html.erb:25: syntax error, unexpected tLABEL, expecting ')'
+Started GET "/" for 10.0.2.2 at 2020-03-13 06:40:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:23
+Completed 500 Internal Server Error in 2103ms (ActiveRecord: 12.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_post_image_path' for #<#<Class:0x000000000620cd20>:0x000000000743ab00>
+Did you mean?  new_user_password_path):
+    25:             <%= link_to "Home", user_path(current_user.id) %>
+    26:           </li>
+    27:           <li class="">
+    28:             <%= link_to 'Users', new_post_image_path %>
+    29:           </li>
+    30:           <li class="">
+    31:             <%= link_to 'Books', user_path(current_user.id) %>
+  
+app/views/layouts/application.html.erb:28:in `_app_views_layouts_application_html_erb__3377274814717782988_60921160'
+Started GET "/" for 10.0.2.2 at 2020-03-13 06:41:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:23
+Completed 500 Internal Server Error in 516ms (ActiveRecord: 2.7ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users"}, missing required keys: [:id]):
+    25:             <%= link_to "Home", user_path(current_user.id) %>
+    26:           </li>
+    27:           <li class="">
+    28:             <%= link_to 'Users', user_path %>
+    29:           </li>
+    30:           <li class="">
+    31:             <%= link_to 'Books', book_path %>
+  
+app/views/layouts/application.html.erb:28:in `_app_views_layouts_application_html_erb__3377274814717782988_70034088230960'
+Started GET "/" for 10.0.2.2 at 2020-03-13 06:46:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:23
+Completed 500 Internal Server Error in 2174ms (ActiveRecord: 9.8ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `index_user_path' for #<#<Class:0x0000000005c4b760>:0x00007f07d0503078>):
+    25:             <%= link_to "Home", user_path(current_user.id) %>
+    26:           </li>
+    27:           <li class="">
+    28:             <%= link_to 'Users', index_user_path %>
+    29:           </li>
+    30:           <li class="">
+    31:             <%= link_to 'Books', index_book_path %>
+  
+app/views/layouts/application.html.erb:28:in `_app_views_layouts_application_html_erb__4561392134986934100_48380780'
+Started GET "/" for 10.0.2.2 at 2020-03-13 06:53:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:23
+Completed 500 Internal Server Error in 2121ms (ActiveRecord: 10.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `index_user_path' for #<#<Class:0x00007f0fdc4ffd10>:0x00007f0fdc4fc2a0>):
+    25:             <%= link_to "Home", user_path(current_user.id) %>
+    26:           </li>
+    27:           <li class="">
+    28:             <%= link_to 'Users', index_user_path %>
+    29:           </li>
+    30:           <li class="">
+    31:             <%= link_to 'Books', index_book_path %>
+  
+app/views/layouts/application.html.erb:28:in `_app_views_layouts_application_html_erb__4208872864282218664_51012500'
+Started GET "/" for 10.0.2.2 at 2020-03-13 06:54:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:23
+Completed 500 Internal Server Error in 1147ms (ActiveRecord: 1.8ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `show_user_path' for #<#<Class:0x00007f0fdc4ffd10>:0x00007f0fde4289f8>):
+    25:             <%= link_to "Home", user_path(current_user.id) %>
+    26:           </li>
+    27:           <li class="">
+    28:             <%= link_to 'Users', show_user_path %>
+    29:           </li>
+    30:           <li class="">
+    31:             <%= link_to 'Books', index_book_path %>
+  
+app/views/layouts/application.html.erb:28:in `_app_views_layouts_application_html_erb__4208872864282218664_69853065036800'
+Started GET "/" for 10.0.2.2 at 2020-03-13 06:56:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:23
+Completed 500 Internal Server Error in 1867ms (ActiveRecord: 9.1ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `index_book_path' for #<#<Class:0x00007eff104ff630>:0x000000000501bb70>
+Did you mean?  new_books_path):
+    26:           </li>
+    27:    
+    28:           <li class="">
+    29:             <%= link_to 'Books', index_book_path %>
+    30:           </li>
+    31:           <li>
+    32:             <%= link_to "logout", destroy_user_session_path, method: :delete %>
+  
+app/views/layouts/application.html.erb:29:in `_app_views_layouts_application_html_erb___4237765782122918605_69816977776300'
+Started GET "/" for 10.0.2.2 at 2020-03-13 06:59:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:23
+Completed 500 Internal Server Error in 1914ms (ActiveRecord: 8.9ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `index_user_path' for #<#<Class:0x00007f24004f9518>:0x0000000005f50b68>):
+    25:             <%= link_to "Home", user_path(current_user.id) %>
+    26:           </li>
+    27:           <li class="">
+    28:             <%= link_to 'Users', index_user_path %>
+    29:           </li>
+    30:           <li class="">
+    31:             <%= link_to 'Books', index_book_path %>
+  
+app/views/layouts/application.html.erb:28:in `_app_views_layouts_application_html_erb___3103214506661389752_69896300456860'
+Started GET "/" for 10.0.2.2 at 2020-03-13 07:07:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (4.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.6ms)
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:23
+Completed 500 Internal Server Error in 2523ms (ActiveRecord: 8.4ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `index_user_path' for #<#<Class:0x00007fd12c4fd490>:0x0000000006e48f08>):
+    25:             <%= link_to "Home", user_path(current_user.id) %>
+    26:           </li>
+    27:           <li class="">
+    28:             <%= link_to 'Users', index_user_path, method: :index %>
+    29:           </li>
+    30:           <li class="">
+    31:             <%= link_to 'Books', index_book_path, method: :index %>
+  
+app/views/layouts/application.html.erb:28:in `_app_views_layouts_application_html_erb__1090578144335013273_70268184235240'
+Started GET "/users/sign_in" for 10.0.2.2 at 2020-03-13 07:07:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 40ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-03-13 07:07:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:23
+Completed 500 Internal Server Error in 1070ms (ActiveRecord: 1.9ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `index_user_path' for #<#<Class:0x00007fd12c4fd490>:0x00007fd12e5980b0>):
+    25:             <%= link_to "Home", user_path(current_user.id) %>
+    26:           </li>
+    27:           <li class="">
+    28:             <%= link_to 'Users', index_user_path, method: :index %>
+    29:           </li>
+    30:           <li class="">
+    31:             <%= link_to 'Books', index_book_path, method: :index %>
+  
+app/views/layouts/application.html.erb:28:in `_app_views_layouts_application_html_erb__1090578144335013273_70268201312280'
+Started GET "/user/sign_up" for 10.0.2.2 at 2020-03-13 07:07:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/user/sign_up"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/sign_up" for 10.0.2.2 at 2020-03-13 07:08:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-03-13 07:08:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:23
+Completed 500 Internal Server Error in 610ms (ActiveRecord: 1.6ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `index_user_path' for #<#<Class:0x00007fd12c4fd490>:0x00007fd12e4a5658>):
+    25:             <%= link_to "Home", user_path(current_user.id) %>
+    26:           </li>
+    27:           <li class="">
+    28:             <%= link_to 'Users', index_user_path, method: :index %>
+    29:           </li>
+    30:           <li class="">
+    31:             <%= link_to 'Books', index_book_path, method: :index %>
+  
+app/views/layouts/application.html.erb:28:in `_app_views_layouts_application_html_erb__1090578144335013273_70268200741580'
+Started GET "/" for 10.0.2.2 at 2020-03-13 07:09:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.6ms)
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:23
+Completed 500 Internal Server Error in 1720ms (ActiveRecord: 7.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `show_user_path' for #<#<Class:0x00000000065c2078>:0x00000000072661d0>):
+    22:         
+    23:         <% if user_signed_in? %>
+    24:           <li class="">
+    25:             <%= link_to "Home", show_user_path(current_user.id), method: :show %>
+    26:           </li>
+    27:           <li class="">
+    28:             <%= link_to 'Users', index_user_path, method: :index %>
+  
+app/views/layouts/application.html.erb:25:in `_app_views_layouts_application_html_erb__2385629044934384841_53303020'
+Started GET "/" for 10.0.2.2 at 2020-03-13 07:10:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.4ms)
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:23
+Completed 500 Internal Server Error in 1453ms (ActiveRecord: 1.4ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `show_user_path' for #<#<Class:0x00000000065c2078>:0x00007f366001f458>):
+    22:         
+    23:         <% if user_signed_in? %>
+    24:           <li class="">
+    25:             <%= link_to "Home", show_user_path, method: :show %>
+    26:           </li>
+    27:           <li class="">
+    28:             <%= link_to 'Users', index_user_path, method: :index %>
+  
+app/views/layouts/application.html.erb:25:in `_app_views_layouts_application_html_erb__2385629044934384841_75356600'
+Started GET "/" for 10.0.2.2 at 2020-03-13 07:11:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.6ms)
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:23
+Completed 500 Internal Server Error in 953ms (ActiveRecord: 3.1ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users"}, missing required keys: [:id]):
+    22:         
+    23:         <% if user_signed_in? %>
+    24:           <li class="">
+    25:             <%= link_to "Home", user_path, method: :show %>
+    26:           </li>
+    27:           <li class="">
+    28:             <%= link_to 'Users', index_user_path, method: :index %>
+  
+app/views/layouts/application.html.erb:25:in `_app_views_layouts_application_html_erb__2385629044934384841_95407980'
+Started GET "/" for 10.0.2.2 at 2020-03-13 07:11:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (4.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:23
+Completed 500 Internal Server Error in 1808ms (ActiveRecord: 4.4ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `show_user_path' for #<#<Class:0x00000000065c2078>:0x0000000008452ec0>):
+    22:         
+    23:         <% if user_signed_in? %>
+    24:           <li class="">
+    25:             <%= link_to "Home", show_user_path, method: :show %>
+    26:           </li>
+    27:           <li class="">
+    28:             <%= link_to 'Users', index_user_path, method: :index %>
+  
+app/views/layouts/application.html.erb:25:in `_app_views_layouts_application_html_erb__2385629044934384841_69465780'
+Started GET "/" for 10.0.2.2 at 2020-03-13 07:12:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:23
+Completed 500 Internal Server Error in 1008ms (ActiveRecord: 3.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `show_user_path' for #<#<Class:0x00000000065c2078>:0x0000000009bc78f8>):
+    22:         
+    23:         <% if user_signed_in? %>
+    24:           <li class="">
+    25:             <%= link_to "Home", show_user_path(current_user.id), method: :show %>
+    26:           </li>
+    27:           <li class="">
+    28:             <%= link_to 'Users', index_user_path, method: :index %>
+  
+app/views/layouts/application.html.erb:25:in `_app_views_layouts_application_html_erb__2385629044934384841_81640520'
+Started GET "/" for 10.0.2.2 at 2020-03-13 07:13:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:23
+Completed 500 Internal Server Error in 1248ms (ActiveRecord: 2.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `index_user_path' for #<#<Class:0x00000000065c2078>:0x0000000009ab50f0>):
+    25:             <%= link_to "Home", user_path(current_user.id) %>
+    26:           </li>
+    27:           <li class="">
+    28:             <%= link_to 'Users', index_user_path, method: :index %>
+    29:           </li>
+    30:           <li class="">
+    31:             <%= link_to 'Books', index_book_path, method: :index %>
+  
+app/views/layouts/application.html.erb:28:in `_app_views_layouts_application_html_erb__2385629044934384841_81061920'
+Started GET "/" for 10.0.2.2 at 2020-03-13 07:13:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:23
+Completed 500 Internal Server Error in 487ms (ActiveRecord: 1.3ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users"}, missing required keys: [:id]):
+    25:             <%= link_to "Home", user_path(current_user.id) %>
+    26:           </li>
+    27:           <li class="">
+    28:             <%= link_to 'Users', user_path, method: :index %>
+    29:           </li>
+    30:           <li class="">
+    31:             <%= link_to 'Books', index_book_path, method: :index %>
+  
+app/views/layouts/application.html.erb:28:in `_app_views_layouts_application_html_erb__2385629044934384841_76776840'
+Started GET "/" for 10.0.2.2 at 2020-03-13 07:15:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:23
+Completed 500 Internal Server Error in 1041ms (ActiveRecord: 1.9ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `index_user_path' for #<#<Class:0x00000000065c2078>:0x000000000a205a58>):
+    25:             <%= link_to "Home", user_path(current_user.id) %>
+    26:           </li>
+    27:           <li class="">
+    28:             <%= link_to 'Users', index_user_path, method: :index %>
+    29:           </li>
+    30:           <li class="">
+    31:             <%= link_to 'Books', index_book_path, method: :index %>
+  
+app/views/layouts/application.html.erb:28:in `_app_views_layouts_application_html_erb__2385629044934384841_85355780'
+Started GET "/" for 10.0.2.2 at 2020-03-13 11:09:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.6ms)
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:23
+Completed 500 Internal Server Error in 2299ms (ActiveRecord: 8.9ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `index_user_path' for #<#<Class:0x00007fe5044f9688>:0x000000000658d738>):
+    25:             <%= link_to "Home", user_path(current_user.id) %>
+    26:           </li>
+    27:           <li class="">
+    28:             <%= link_to 'Users', index_user_path, method: :index %>
+    29:           </li>
+    30:           <li class="">
+    31:             <%= link_to 'Books', index_book_path, method: :index %>
+  
+app/views/layouts/application.html.erb:28:in `_app_views_layouts_application_html_erb___545283541961154272_70310798365960'
+Started GET "/" for 10.0.2.2 at 2020-03-13 11:10:53 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:23
+Completed 500 Internal Server Error in 1290ms (ActiveRecord: 3.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `index_book_path' for #<#<Class:0x00007fe5044f9688>:0x00007fe50644a5f0>):
+    26:           </li>
+    27: 
+    28:           <li class="">
+    29:             <%= link_to 'Books', index_book_path, method: :index %>
+    30:           </li>
+    31:           <li>
+    32:             <%= link_to "logout", destroy_user_session_path, method: :delete %>
+  
+app/views/layouts/application.html.erb:29:in `_app_views_layouts_application_html_erb___545283541961154272_70310814790000'
+Started GET "/" for 10.0.2.2 at 2020-03-13 11:11:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:23
+Completed 200 OK in 707ms (Views: 663.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-03-13 11:11:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:23
+Completed 200 OK in 341ms (Views: 317.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-03-13 11:11:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:23
+Completed 200 OK in 399ms (Views: 353.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-03-13 11:12:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:23
+Completed 500 Internal Server Error in 1389ms (ActiveRecord: 3.6ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `show_user_path' for #<#<Class:0x00007fe5044f9688>:0x00007fe4f87b5f18>):
+    25:             <%= link_to "Home", user_path(current_user.id) %>
+    26:           </li>
+    27:           <li class="">
+    28:             <%= link_to 'Users', show_user_path, method: :show %>
+    29:           </li>
+    30:           <li class="">
+    31:             <%= link_to 'Books', index_book_path, method: :index %>
+  
+app/views/layouts/application.html.erb:28:in `_app_views_layouts_application_html_erb___545283541961154272_70310698979080'
+Started GET "/" for 10.0.2.2 at 2020-03-13 11:12:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:23
+Completed 500 Internal Server Error in 1082ms (ActiveRecord: 1.4ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `index_user_path' for #<#<Class:0x00007fe5044f9688>:0x00007fe5062984c8>):
+    25:             <%= link_to "Home", user_path(current_user.id) %>
+    26:           </li>
+    27:           <li class="">
+    28:             <%= link_to 'Users', index_user_path, method: :index %>
+    29:           </li>
+    30:           <li class="">
+    31:             <%= link_to 'Books', index_book_path, method: :index %>
+  
+app/views/layouts/application.html.erb:28:in `_app_views_layouts_application_html_erb___545283541961154272_70310814171200'
+Started GET "/" for 10.0.2.2 at 2020-03-13 11:13:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:23
+Completed 200 OK in 466ms (Views: 436.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-03-13 11:13:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:23
+Completed 200 OK in 367ms (Views: 339.0ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-03-13 11:13:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:23
+Completed 200 OK in 487ms (Views: 453.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-03-13 11:13:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:23
+Completed 500 Internal Server Error in 1737ms (ActiveRecord: 3.1ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `index_user_path' for #<#<Class:0x00007fe5044f9688>:0x00007fe5075539c8>):
+    25:             <%= link_to "Home", user_path(current_user.id) %>
+    26:           </li>
+    27:           <li class="">
+    28:             <%= link_to 'Users', index_user_path, method: :index %>
+    29:           </li>
+    30:           <li class="">
+    31:             <%= link_to 'Books', index_book_path, method: :index %>
+  
+app/views/layouts/application.html.erb:28:in `_app_views_layouts_application_html_erb___545283541961154272_70310823623820'
+Started GET "/" for 10.0.2.2 at 2020-03-13 11:14:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:23
+Completed 500 Internal Server Error in 1127ms (ActiveRecord: 1.9ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `index_user_path' for #<#<Class:0x00007fe5044f9688>:0x00007fe5065442d0>):
+    25:             <%= link_to "Home", user_path(current_user.id) %>
+    26:           </li>
+    27:           <li class="">
+    28:             <%= link_to 'Users', index_user_path, method: :index %>
+    29:           </li>
+    30:           <li class="">
+    31:             <%= link_to 'Books', index_book_path, method: :index %>
+  
+app/views/layouts/application.html.erb:28:in `_app_views_layouts_application_html_erb___545283541961154272_70310815276500'
+Started GET "/" for 10.0.2.2 at 2020-03-14 03:47:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:23
+Completed 500 Internal Server Error in 2054ms (ActiveRecord: 8.4ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `index_user_path' for #<#<Class:0x00007fb5b04fe698>:0x0000000006a2aa70>):
+    25:             <%= link_to "Home", user_path(current_user.id) %>
+    26:           </li>
+    27:           <li class="">
+    28:             <%= link_to 'Users', index_user_path, method: :index %>
+    29:           </li>
+    30:           <li class="">
+    31:             <%= link_to 'Books', index_book_path, method: :index %>
+  
+app/views/layouts/application.html.erb:28:in `_app_views_layouts_application_html_erb___347106058167571348_70209161984780'
+Started GET "/" for 10.0.2.2 at 2020-03-14 03:57:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.3ms)
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:23
+Completed 500 Internal Server Error in 2376ms (ActiveRecord: 11.4ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `index_user_path' for #<#<Class:0x0000000006161a88>:0x00000000054a0f60>):
+    25:             <%= link_to "Home", user_path(current_user.id) %>
+    26:           </li>
+    27:           <li class="">
+    28:             <%= link_to 'Users', index_user_path, method: :index %>
+    29:           </li>
+    30:           <li class="">
+    31:             <%= link_to 'Books', index_book_path, method: :index %>
+  
+app/views/layouts/application.html.erb:28:in `_app_views_layouts_application_html_erb__1030350547198460353_51065380'
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for 10.0.2.2 at 2020-03-14 04:02:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:23
+Completed 500 Internal Server Error in 2102ms (ActiveRecord: 11.6ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `index_user_path' for #<#<Class:0x000000000585ab88>:0x00007f7e90502808>
+Did you mean?  edit_user_path):
+    25:             <%= link_to "Home", user_path(current_user.id) %>
+    26:           </li>
+    27:           <li class="">
+    28:             <%= link_to 'Users', index_user_path, method: :index %>
+    29:           </li>
+    30:           <li class="">
+    31:             <%= link_to 'Books', index_book_path, method: :index %>
+  
+app/views/layouts/application.html.erb:28:in `_app_views_layouts_application_html_erb__4025125304544492148_46422480'
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (2.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for 10.0.2.2 at 2020-03-14 04:04:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:23
+Completed 500 Internal Server Error in 1526ms (ActiveRecord: 9.2ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"users"}, missing required keys: [:id]):
+    25:             <%= link_to "Home", user_path(current_user.id) %>
+    26:           </li>
+    27:           <li class="">
+    28:             <%= link_to 'Users', edit_user_path, method: :edit %>
+    29:           </li>
+    30:           <li class="">
+    31:             <%= link_to 'Books', index_book_path, method: :index %>
+  
+app/views/layouts/application.html.erb:28:in `_app_views_layouts_application_html_erb___1798398684824942430_50732180'
+Started GET "/" for 10.0.2.2 at 2020-03-14 04:06:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.9ms)
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:23
+Completed 500 Internal Server Error in 2060ms (ActiveRecord: 9.9ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `index_book_path' for #<#<Class:0x0000000005b7d310>:0x00007f6d4c505648>):
+    28:             <%= link_to 'Users', edit_user_path(current_user.id), method: :edit %>
+    29:           </li>
+    30:           <li class="">
+    31:             <%= link_to 'Books', index_book_path, method: :index %>
+    32:           </li>
+    33:           <li>
+    34:             <%= link_to "logout", destroy_user_session_path, method: :delete %>
+  
+app/views/layouts/application.html.erb:31:in `_app_views_layouts_application_html_erb___3203827679494513667_47916840'
+Started GET "/" for 10.0.2.2 at 2020-03-14 04:09:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:23
+Completed 500 Internal Server Error in 1883ms (ActiveRecord: 9.5ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `users' for #<#<Class:0x00000000058d53d8>:0x00007fec70505780>
+Did you mean?  users_url):
+    25:             <%= link_to "Home", user_path(current_user.id) %>
+    26:           </li>
+    27:           <li class="">
+    28:             <%= link_to 'Users', index_user_path(users.id), method: :index %>
+    29:           </li>
+    30:           <li class="">
+    31:             <%= link_to 'Books', index_book_path(books.id), method: :index %>
+  
+app/views/layouts/application.html.erb:28:in `_app_views_layouts_application_html_erb__4505149757326033062_46532860'
+Started GET "/" for 10.0.2.2 at 2020-03-14 04:10:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.5ms)
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:23
+Completed 500 Internal Server Error in 1825ms (ActiveRecord: 8.5ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user' for #<#<Class:0x00000000061a7560>:0x0000000006e67520>):
+    25:             <%= link_to "Home", user_path(current_user.id) %>
+    26:           </li>
+    27:           <li class="">
+    28:             <%= link_to 'Users', index_user_path(user.id), method: :index %>
+    29:           </li>
+    30:           <li class="">
+    31:             <%= link_to 'Books', index_book_path(book.id), method: :index %>
+  
+app/views/layouts/application.html.erb:28:in `_app_views_layouts_application_html_erb__3481971763682230527_51084940'
+Started GET "/" for 10.0.2.2 at 2020-03-14 04:16:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:23
+Completed 500 Internal Server Error in 1760ms (ActiveRecord: 7.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user' for #<#<Class:0x0000000006e29608>:0x00007fa2ec5059b0>):
+    25:             <%= link_to "Home", user_path(current_user.id) %>
+    26:           </li>
+    27:           <li class="">
+    28:             <%= link_to 'Users', index_user_path(user.id), method: :index %>
+    29:           </li>
+    30:           <li class="">
+    31:             <%= link_to 'Books', index_book_path(book.id), method: :index %>
+  
+app/views/layouts/application.html.erb:28:in `_app_views_layouts_application_html_erb___587191588609067925_57707180'
+Started GET "/" for 10.0.2.2 at 2020-03-14 04:19:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:23
+Completed 500 Internal Server Error in 1148ms (ActiveRecord: 1.8ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user' for #<#<Class:0x0000000006e29608>:0x00007fa2ee433af8>):
+    25:             <%= link_to "Home", user_path(current_user.id) %>
+    26:           </li>
+    27:           <li class="">
+    28:             <%= link_to 'Users', index_user_path(user.id), method: :index %>
+    29:           </li>
+    30:           <li class="">
+    31:             <%= link_to 'Books', index_book_path(book.id), method: :index %>
+  
+app/views/layouts/application.html.erb:28:in `_app_views_layouts_application_html_erb___587191588609067925_70168879496380'
+Started GET "/" for 10.0.2.2 at 2020-03-14 04:19:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.3ms)
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:23
+Completed 500 Internal Server Error in 1988ms (ActiveRecord: 6.9ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user' for #<#<Class:0x000000000566f670>:0x00007ff29c506860>):
+    25:             <%= link_to "Home", user_path(current_user.id) %>
+    26:           </li>
+    27:           <li class="">
+    28:             <%= link_to 'Users', index_user_path(user.id), method: :index %>
+    29:           </li>
+    30:           <li class="">
+    31:             <%= link_to 'Books', index_book_path(book.id), method: :index %>
+  
+app/views/layouts/application.html.erb:28:in `_app_views_layouts_application_html_erb___3450419725929722708_70339990717060'
+Started GET "/" for 10.0.2.2 at 2020-03-14 04:21:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:23
+Completed 500 Internal Server Error in 1816ms (ActiveRecord: 9.9ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `users' for #<#<Class:0x0000000005121588>:0x0000000005e41600>
+Did you mean?  users_url):
+    25:             <%= link_to "Home", user_path(current_user.id) %>
+    26:           </li>
+    27:           <li class="">
+    28:             <%= link_to 'Users', index_user_path(users.id), method: :index %>
+    29:           </li>
+    30:           <li class="">
+    31:             <%= link_to 'Books', index_book_path(book.id), method: :index %>
+  
+app/views/layouts/application.html.erb:28:in `_app_views_layouts_application_html_erb__3874655176314134356_42569500'
+Started GET "/" for 10.0.2.2 at 2020-03-14 04:21:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:23
+Completed 500 Internal Server Error in 1315ms (ActiveRecord: 6.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    25:             <%= link_to "Home", user_path(current_user.id) %>
+    26:           </li>
+    27:           <li class="">
+    28:             <%= link_to 'Users', index_user_path(@users.id), method: :index %>
+    29:           </li>
+    30:           <li class="">
+    31:             <%= link_to 'Books', index_book_path(book.id), method: :index %>
+  
+app/views/layouts/application.html.erb:28:in `_app_views_layouts_application_html_erb___3972465328135017300_41401000'
+Started GET "/" for 10.0.2.2 at 2020-03-14 04:22:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (4.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:23
+Completed 500 Internal Server Error in 1630ms (ActiveRecord: 6.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `users' for #<#<Class:0x0000000005b96298>:0x00007f7728509ed8>
+Did you mean?  users_url):
+    25:             <%= link_to "Home", user_path(current_user.id) %>
+    26:           </li>
+    27:           <li class="">
+    28:             <%= link_to 'Users', index_user_path(users.id), method: :index %>
+    29:           </li>
+    30:           <li class="">
+    31:             <%= link_to 'Books', index_book_path(book.id), method: :index %>
+  
+app/views/layouts/application.html.erb:28:in `_app_views_layouts_application_html_erb__1517379293357429650_48092460'
+Started GET "/" for 10.0.2.2 at 2020-03-14 04:36:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:23
+Completed 500 Internal Server Error in 2273ms (ActiveRecord: 8.1ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user_params' for #<#<Class:0x00007fc7c44fdad8>:0x00000000069497a0>
+Did you mean?  user_path):
+    25:             <%= link_to "Home", user_path(current_user.id) %>
+    26:           </li>
+    27:           <li class="">
+    28:             <%= link_to 'Users', index_user_path(user_params), method: :index %>
+    29:           </li>
+    30:           <li class="">
+    31:             <%= link_to 'Books', index_book_path(book_params), method: :index %>
+  
+app/views/layouts/application.html.erb:28:in `_app_views_layouts_application_html_erb__3343617253391306758_70247984468980'
+Started GET "/" for 10.0.2.2 at 2020-03-14 04:37:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:23
+Completed 500 Internal Server Error in 1905ms (ActiveRecord: 8.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `index_user_path' for #<#<Class:0x0000000006e31fd8>:0x00007f045c506150>
+Did you mean?  edit_user_path):
+    25:             <%= link_to "Home", user_path(current_user.id) %>
+    26:           </li>
+    27:           <li class="">
+    28:             <%= link_to 'Users', index_user_path, method: :index %>
+    29:           </li>
+    30:           <li class="">
+    31:             <%= link_to 'Books', index_book_path, method: :index %>
+  
+app/views/layouts/application.html.erb:28:in `_app_views_layouts_application_html_erb___647657385312855471_57726520'
+Started GET "/" for 10.0.2.2 at 2020-03-14 04:51:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:23
+Completed 500 Internal Server Error in 1942ms (ActiveRecord: 7.6ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `index_book_path' for #<#<Class:0x00007fcb98503d48>:0x00007fcb985002d8>):
+    28:             <%= link_to 'Users', users_path, method: :index %>
+    29:           </li>
+    30:           <li class="">
+    31:             <%= link_to 'Books', index_book_path, method: :index %>
+    32:           </li>
+    33:           <li>
+    34:             <%= link_to "logout", destroy_user_session_path, method: :delete %>
+  
+app/views/layouts/application.html.erb:31:in `_app_views_layouts_application_html_erb___3674418314425454055_53332680'

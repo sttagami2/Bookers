@@ -22,29 +22,29 @@
         
         <% if user_signed_in? %>
           <li class="">
-            <%= link_to "Home", destroy_user_session_path, method: :delete %>
+            <%= link_to "Home", user_path(current_user.id) %>
           </li>
           <li class="">
-            <%= link_to 'Users', new_post_image_path %>
+            <%= link_to 'Users', index_user_path, method: :index %>
           </li>
           <li class="">
-            <%= link_to 'Books', user_path(current_user.id) %>
+            <%= link_to 'Books', index_book_path, method: :index %>
           </li>
           <li>
             <%= link_to "logout", destroy_user_session_path, method: :delete %>
           </li>
         <% else %>
           <li class="">
-            <%= link_to "Home", new_user_registration_path %>
+            <%= link_to "Home", user_path(current_user.id) %>
           </li>
           <li class="">
-            <%= link_to "About", new_user_session_path %>
+            <%= link_to "About", new_user_path(current_user.id), method: :index %>
           </li>
           <li class="">
             <%= link_to "sign up", new_user_registration_path %>
           </li>
           <li class="">
-            <%= link_to "login", new_user_registration_path %>
+            <%= link_to "login", new_user_session_path %>
           </li>
         <% end %>
 
@@ -53,4 +53,13 @@
     </div>
     <%= yield %>
   </body>
+  <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-3 col-xs-offset-9">
+        <p>CopyRight Infratop.inc</p>
+      </div>
+    </div>
+  </div>
+</footer>
 </html>
