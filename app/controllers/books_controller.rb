@@ -7,9 +7,11 @@ class BooksController < ApplicationController
     else
       @books = Book.all   
       render :index                         # renderはコントローラを介さずにViewへデータを返す → 返すデータをrender前に定義すること！
+    end
   end
 
   def index
+    @books = Book.all
   end
 
   def show

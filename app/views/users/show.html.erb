@@ -21,20 +21,18 @@
 
       <!-- 編集へ -->
       <div class="row">
-        <div class="col^xs-12 btn btn-default g;yphicon glyphicon-wrench">
-          <a href="#">edit</a>
-        </div>
+        <div class="col-xs-12 btn btn-default glyphicon glyphicon-wrench"></div>
       </div>
       <!-- 編集へ -->
 
       <h2>New book</h2>
       <div class="row">
         <label for="book_title">Title</label>
-        <input class="col-xs-12 book_title" type="text" name="book[title]">
+        <input class="col-xs-12 book_title" type="text">
       </div>
       <div class="row">
         <label for="book_opinion">Opinion</label>
-        <input class="col-xs-12 book_body" type="text" name="book[body]">
+        <input class="col-xs-12 book_body" type="string">
       </div>
 
 
@@ -44,7 +42,7 @@
     <!-- Books --><!-- Books --><!-- Books --><!-- Books -->
     <div class="col-xs-9">
       <h2>Books</h2>
-      <title>
+      <table>
         <tr>
           <th></th>
           <th>Title</th>
@@ -58,9 +56,7 @@
         </tr>
         <!-- form_forを使う？ -->
         
-      </title>
-
-      <p>CopyRight Infratop.Inc</p>
+      </table>
     </div>
     <!-- Books --><!-- Books --><!-- Books --><!-- Books -->
 

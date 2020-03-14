@@ -25,10 +25,10 @@
             <%= link_to "Home", user_path(current_user.id) %>
           </li>
           <li class="">
-            <%= link_to 'Users', index_user_path, method: :index %>
+            <%= link_to 'Users', users_path, method: :index %>
           </li>
           <li class="">
-            <%= link_to 'Books', index_book_path, method: :index %>
+            <%= link_to 'Books', books_path, method: :index %>
           </li>
           <li>
             <%= link_to "logout", destroy_user_session_path, method: :delete %>
@@ -38,7 +38,7 @@
             <%= link_to "Home", user_path(current_user.id) %>
           </li>
           <li class="">
-            <%= link_to "About", new_user_path(current_user.id), method: :index %>
+            <%= link_to "About", new_user_path, method: :index %>
           </li>
           <li class="">
             <%= link_to "sign up", new_user_registration_path %>
