@@ -17,49 +17,86 @@
   </head>
 
   <body>
-    <div id="slidemenu">
-      <ul class="nav navbar-nav navbar-right" data-hover="dropdown" data-animations="zoomIn fadeIn fadeInUp fadeIn">
-        
-        <% if user_signed_in? %>
-          <li class="">
-            <%= link_to "Home", user_path(current_user.id) %>
-          </li>
-          <li class="">
-            <%= link_to 'Users', users_path, method: :index %>
-          </li>
-          <li class="">
-            <%= link_to 'Books', books_path, method: :index %>
-          </li>
-          <li>
-            <%= link_to "logout", destroy_user_session_path, method: :delete %>
-          </li>
-        <% else %>
-          <li class="">
-            <%= link_to "Home", user_path(current_user.id) %>
-          </li>
-          <li class="">
-            <%= link_to "About", new_user_path, method: :index %>
-          </li>
-          <li class="">
-            <%= link_to "sign up", new_user_registration_path %>
-          </li>
-          <li class="">
-            <%= link_to "login", new_user_session_path %>
-          </li>
-        <% end %>
+    <header class="header" class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <nav class="nav navbar-nav navbar-left">
+          <h3>Bookers</h3>
+        </nav>
+        <ul class="nav navbar-nav navbar-right navbar-dark" data-hover="dropdown" data-animations="zoomIn fadeIn fadeInUp fadeIn">
+          
+          <% if user_signed_in? %>
+            <li class="">
+              <div class="row">
+              <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                <%= link_to "Home", user_path(current_user.id) %>
+              </div>
+            </li>
+
+            <li class="">
+              <div class="row">	
+                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                <%= link_to 'Users', users_path%>
+              </div>
+            </li>
+            
+            <li class="">
+              <div class="row">
+                <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
+                <%= link_to 'Books', books_path %>
+              </div>
+            </li>
+
+            <li>
+              <div class="row">
+                <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>
+                <%= link_to "logout", destroy_user_session_path, method: :delete %>
+              </div>
+            </li>
+
+          <% else %>
+
+            <li class="">
+              <div class="row">
+              <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                <%= link_to "Home", new_user_path %>
+              </div>
+            </li>
+
+            <li class="">
+              <div class="row">
+                <span class="glyphicon glyphicon-link" aria-hidden="true"></span>
+                <%= link_to "About", new_user_path, method: :index %>
+              </div>
+            </li>
+
+            <li class="">
+              <div class="row">
+                <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                <%= link_to "sign up", new_user_registration_path %>
+              </div>
+            </li>
+
+            <li class="">
+              <div class="row">
+                <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>
+                <%= link_to "login", new_user_session_path %>
+              </div>
+            </li>
+          <% end %>
 
 
-      </ul>
-    </div>
+        </ul>
+      </div>
+    </header>
     <%= yield %>
   </body>
-  <footer>
-  <div class="container">
+  <footer　class="footer fixed-bottom">
+  <div class="container-footer">
     <div class="row">
       <div class="col-xs-3 col-xs-offset-9">
         <p>CopyRight Infratop.inc</p>
       </div>
     </div>
   </div>
-</footer>
-</html>
+  </footer>
+  </html>

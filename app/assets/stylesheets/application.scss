@@ -16,3 +16,35 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
+.header {
+  background-color: black;
+  height: 60px;
+  .container {
+    .nav {
+      h3 {
+        color: white;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.nav {
+  li {
+    margin: 20px 30px;
+    a {
+      color: rgb(155, 155, 155);
+    }
+    .row {
+     .glyphicon {
+        color: rgb(155, 155, 155);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    height: 228.5px;
+  }
+}

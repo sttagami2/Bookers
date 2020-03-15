@@ -6,37 +6,10 @@
 
     <!-- User info --><!-- User info --><!-- User info --><!-- User info -->
     <div class="col-xs-3">
-      <h2>User info</h2>
-      <img src="" alt="">     <!-- userが登録したimg -->
-      <table class="table">
-        <tr>
-          <th>name</th>
-          <th>DMM</th>
-        </tr>
-        <tr>
-          <th>introduction</th>
-          <th>頑張ります！</th>
-        </tr>
-      </table>
-
-      <!-- 編集へ -->
-      <div class="row">
-        <div class="col-xs-12 btn btn-default glyphicon glyphicon-wrench"></div>
-      </div>
-      <!-- 編集へ -->
-
-      <h2>New book</h2>
-      <div class="row">
-        <label for="book_title">Title</label>
-        <input class="col-xs-12 book_title" type="text">
-      </div>
-      <div class="row">
-        <label for="book_opinion">Opinion</label>
-        <input class="col-xs-12 book_body" type="string">
-      </div>
-
-
+      <%= render 'books/info', book: @book %>
     </div>
+      <!-- User info --><!-- User info --><!-- User info --><!-- User info -->
+    
     <!-- User info --><!-- User info --><!-- User info --><!-- User info -->
   
     <!-- Books --><!-- Books --><!-- Books --><!-- Books -->
