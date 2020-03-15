@@ -10902,3 +10902,581 @@ Processing by UsersController#index as HTML
 Completed 200 OK in 1275ms (Views: 1222.4ms | ActiveRecord: 12.8ms)
 
 
+Started GET "/users/1" for 10.0.2.2 at 2020-03-15 09:09:28 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (6.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/_info.html.erb:17
+  Rendered books/_info.html.erb (33.3ms)
+  Rendered users/show.html.erb within layouts/application (43.2ms)
+Completed 200 OK in 1162ms (Views: 1105.7ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/users/1" for 10.0.2.2 at 2020-03-15 09:09:38 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/_info.html.erb:17
+  Rendered books/_info.html.erb (5.3ms)
+  Rendered users/show.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 301ms (Views: 277.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users" for 10.0.2.2 at 2020-03-15 09:09:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/_info.html.erb:17
+  Rendered books/_info.html.erb (5.1ms)
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:12
+  Rendered users/index.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 257ms (Views: 217.8ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/books" for 10.0.2.2 at 2020-03-15 09:09:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/_info.html.erb:17
+  Rendered books/_info.html.erb (4.6ms)
+  Rendered books/index.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 262ms (Views: 223.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/books" for 10.0.2.2 at 2020-03-15 09:21:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/_info.html.erb:17
+  Rendered books/_info.html.erb (19.6ms)
+  Rendered books/index.html.erb within layouts/application (32.6ms)
+Completed 200 OK in 1080ms (Views: 1026.2ms | ActiveRecord: 12.0ms)
+
+
+Started GET "/books" for 10.0.2.2 at 2020-03-15 09:23:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/_info.html.erb:17
+  Rendered books/_info.html.erb (5.3ms)
+  Rendered books/index.html.erb within layouts/application (19.7ms)
+Completed 200 OK in 314ms (Views: 293.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/books" for 10.0.2.2 at 2020-03-15 09:24:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/_info.html.erb:17
+  Rendered books/_info.html.erb (6.3ms)
+  Rendered books/index.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 311ms (Views: 288.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/books" for 10.0.2.2 at 2020-03-15 09:24:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/_info.html.erb:17
+  Rendered books/_info.html.erb (29.9ms)
+  Rendered books/index.html.erb within layouts/application (46.3ms)
+Completed 200 OK in 1495ms (Views: 1435.9ms | ActiveRecord: 12.3ms)
+
+
+Started GET "/books" for 10.0.2.2 at 2020-03-15 09:29:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/_info.html.erb:17
+  Rendered books/_info.html.erb (24.0ms)
+  Rendered books/index.html.erb within layouts/application (38.6ms)
+Completed 200 OK in 1172ms (Views: 1112.1ms | ActiveRecord: 12.0ms)
+
+
+Started GET "/books" for 10.0.2.2 at 2020-03-15 09:30:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/_info.html.erb:17
+  Rendered books/_info.html.erb (29.1ms)
+  Rendered books/index.html.erb within layouts/application (44.1ms)
+Completed 200 OK in 1638ms (Views: 1566.4ms | ActiveRecord: 12.9ms)
+
+
+Started GET "/books" for 10.0.2.2 at 2020-03-15 09:30:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/_info.html.erb:17
+  Rendered books/_info.html.erb (4.9ms)
+  Rendered books/index.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 349ms (Views: 325.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/books" for 10.0.2.2 at 2020-03-15 09:34:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/_info.html.erb:17
+  Rendered books/_info.html.erb (33.2ms)
+  Rendered books/index.html.erb within layouts/application (53.0ms)
+Completed 200 OK in 1406ms (Views: 1338.5ms | ActiveRecord: 15.9ms)
+
+
+Started GET "/books" for 10.0.2.2 at 2020-03-15 09:35:14 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/_info.html.erb:17
+  Rendered books/_info.html.erb (23.7ms)
+  Rendered books/index.html.erb within layouts/application (37.0ms)
+Completed 200 OK in 1084ms (Views: 1026.0ms | ActiveRecord: 10.9ms)
+
+
+Started GET "/users/1" for 10.0.2.2 at 2020-03-15 09:36:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/_info.html.erb:17
+  Rendered books/_info.html.erb (31.7ms)
+  Rendered users/show.html.erb within layouts/application (46.6ms)
+Completed 200 OK in 1404ms (Views: 1338.6ms | ActiveRecord: 15.8ms)
+
+
+Started GET "/users/1" for 10.0.2.2 at 2020-03-15 09:36:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/_info.html.erb:17
+  Rendered books/_info.html.erb (4.0ms)
+  Rendered users/show.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 248ms (Views: 226.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users" for 10.0.2.2 at 2020-03-15 09:36:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/_info.html.erb:17
+  Rendered books/_info.html.erb (3.5ms)
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:12
+  Rendered users/index.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 345ms (Views: 266.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/books" for 10.0.2.2 at 2020-03-15 09:36:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/_info.html.erb:17
+  Rendered books/_info.html.erb (5.5ms)
+  Rendered books/index.html.erb within layouts/application (22.6ms)
+Completed 200 OK in 360ms (Views: 324.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/1" for 10.0.2.2 at 2020-03-15 09:36:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/_info.html.erb:17
+  Rendered books/_info.html.erb (5.5ms)
+  Rendered users/show.html.erb within layouts/application (20.4ms)
+Completed 200 OK in 513ms (Views: 441.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/books" for 10.0.2.2 at 2020-03-15 09:37:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/_info.html.erb:17
+  Rendered books/_info.html.erb (23.8ms)
+  Rendered books/index.html.erb within layouts/application (33.8ms)
+Completed 200 OK in 1109ms (Views: 1036.2ms | ActiveRecord: 25.5ms)
+
+
+Started GET "/books" for 10.0.2.2 at 2020-03-15 09:37:38 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/_info.html.erb:17
+  Rendered books/_info.html.erb (4.7ms)
+  Rendered books/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 259ms (Views: 242.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/1" for 10.0.2.2 at 2020-03-15 09:38:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/_info.html.erb:17
+  Rendered books/_info.html.erb (4.2ms)
+  Rendered users/show.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 214ms (Views: 201.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users" for 10.0.2.2 at 2020-03-15 09:39:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/_info.html.erb:17
+  Rendered books/_info.html.erb (24.8ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:13
+  Rendered users/index.html.erb within layouts/application (38.8ms)
+Completed 200 OK in 1323ms (Views: 1257.1ms | ActiveRecord: 15.1ms)
+
+
+Started GET "/books" for 10.0.2.2 at 2020-03-15 09:39:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/_info.html.erb:17
+  Rendered books/_info.html.erb (3.3ms)
+  Rendered books/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 240ms (Views: 217.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users" for 10.0.2.2 at 2020-03-15 09:39:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/_info.html.erb:17
+  Rendered books/_info.html.erb (4.0ms)
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:13
+  Rendered users/index.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 242ms (Views: 210.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/users/1" for 10.0.2.2 at 2020-03-15 09:39:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/_info.html.erb:17
+  Rendered books/_info.html.erb (4.6ms)
+  Rendered users/show.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 275ms (Views: 250.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users" for 10.0.2.2 at 2020-03-15 09:45:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/_info.html.erb:17
+  Rendered books/_info.html.erb (23.3ms)
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:13
+  Rendered users/index.html.erb within layouts/application (37.2ms)
+Completed 200 OK in 1075ms (Views: 1022.6ms | ActiveRecord: 12.0ms)
+
+
+Started GET "/users" for 10.0.2.2 at 2020-03-15 09:45:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/_info.html.erb:17
+  Rendered books/_info.html.erb (4.4ms)
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:13
+  Rendered users/index.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 279ms (Views: 259.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users/1" for 10.0.2.2 at 2020-03-15 09:45:14 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/_info.html.erb:17
+  Rendered books/_info.html.erb (4.0ms)
+  Rendered users/show.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 249ms (Views: 217.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users" for 10.0.2.2 at 2020-03-15 09:45:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/_info.html.erb:17
+  Rendered books/_info.html.erb (4.4ms)
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:13
+  Rendered users/index.html.erb within layouts/application (22.1ms)
+Completed 200 OK in 317ms (Views: 250.6ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/users" for 10.0.2.2 at 2020-03-15 09:45:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/_info.html.erb:17
+  Rendered books/_info.html.erb (5.0ms)
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:13
+  Rendered users/index.html.erb within layouts/application (21.1ms)
+Completed 200 OK in 359ms (Views: 335.5ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/users" for 10.0.2.2 at 2020-03-15 09:45:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/_info.html.erb:17
+  Rendered books/_info.html.erb (4.8ms)
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:13
+  Rendered users/index.html.erb within layouts/application (21.9ms)
+Completed 200 OK in 326ms (Views: 296.2ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/users/1" for 10.0.2.2 at 2020-03-15 09:45:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/_info.html.erb:17
+  Rendered books/_info.html.erb (6.1ms)
+  Rendered users/show.html.erb within layouts/application (22.9ms)
+Completed 200 OK in 334ms (Views: 308.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/users" for 10.0.2.2 at 2020-03-15 09:45:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/_info.html.erb:17
+  Rendered books/_info.html.erb (4.0ms)
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:13
+  Rendered users/index.html.erb within layouts/application (17.2ms)
+Completed 200 OK in 247ms (Views: 223.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users" for 10.0.2.2 at 2020-03-15 09:47:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/_info.html.erb:17
+  Rendered books/_info.html.erb (27.5ms)
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:31
+  Rendered users/index.html.erb within layouts/application (44.5ms)
+Completed 200 OK in 1219ms (Views: 1155.3ms | ActiveRecord: 14.7ms)
+
+
+Started GET "/users" for 10.0.2.2 at 2020-03-15 09:48:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/_info.html.erb:17
+  Rendered books/_info.html.erb (3.9ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:31
+  Rendered users/index.html.erb within layouts/application (18.9ms)
+Completed 200 OK in 298ms (Views: 263.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users" for 10.0.2.2 at 2020-03-15 09:50:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/_info.html.erb:17
+  Rendered books/_info.html.erb (23.6ms)
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:31
+  Rendered users/index.html.erb within layouts/application (37.2ms)
+Completed 200 OK in 1020ms (Views: 957.5ms | ActiveRecord: 13.9ms)
+
+
+Started GET "/users/1" for 10.0.2.2 at 2020-03-15 09:50:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/_info.html.erb:17
+  Rendered books/_info.html.erb (5.8ms)
+  Rendered users/show.html.erb within layouts/application (21.7ms)
+Completed 200 OK in 304ms (Views: 281.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/1" for 10.0.2.2 at 2020-03-15 09:50:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/_info.html.erb:17
+  Rendered books/_info.html.erb (5.8ms)
+  Rendered users/show.html.erb within layouts/application (26.5ms)
+Completed 200 OK in 383ms (Views: 347.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users" for 10.0.2.2 at 2020-03-15 09:55:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/_info.html.erb:17
+  Rendered books/_info.html.erb (23.9ms)
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:31
+  Rendered users/index.html.erb within layouts/application (37.0ms)
+Completed 200 OK in 961ms (Views: 913.6ms | ActiveRecord: 11.8ms)
+
+
+Started GET "/users/1" for 10.0.2.2 at 2020-03-15 09:55:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/_info.html.erb:17
+  Rendered books/_info.html.erb (4.7ms)
+  Rendered users/show.html.erb within layouts/application (18.5ms)
+Completed 200 OK in 255ms (Views: 220.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users" for 10.0.2.2 at 2020-03-15 09:55:56 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/_info.html.erb:17
+  Rendered books/_info.html.erb (4.0ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:31
+  Rendered users/index.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 275ms (Views: 232.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/1" for 10.0.2.2 at 2020-03-15 09:58:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/_info.html.erb:17
+  Rendered books/_info.html.erb (26.5ms)
+  Rendered users/show.html.erb within layouts/application (38.0ms)
+Completed 200 OK in 1267ms (Views: 1208.8ms | ActiveRecord: 12.4ms)
+
+
+Started GET "/users" for 10.0.2.2 at 2020-03-15 09:58:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/_info.html.erb:17
+  Rendered books/_info.html.erb (4.8ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:31
+  Rendered users/index.html.erb within layouts/application (21.1ms)
+Completed 200 OK in 252ms (Views: 223.7ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/users" for 10.0.2.2 at 2020-03-15 10:04:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/books/_info.html.erb:3
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/_info.html.erb:20
+  Rendered books/_info.html.erb (30.6ms)
+  Rendered users/index.html.erb within layouts/application (41.6ms)
+Completed 200 OK in 1133ms (Views: 1072.6ms | ActiveRecord: 14.9ms)
+
+
+Started GET "/users" for 10.0.2.2 at 2020-03-15 10:07:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/books/_info.html.erb:3
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/_info.html.erb:20
+  Rendered books/_info.html.erb (25.8ms)
+  Rendered users/index.html.erb within layouts/application (37.2ms)
+Completed 200 OK in 1071ms (Views: 1006.3ms | ActiveRecord: 13.4ms)
+
+

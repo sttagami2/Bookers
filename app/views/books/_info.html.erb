@@ -1,15 +1,18 @@
 <h2>User info</h2>
-<p>画像</p>
-<table class="table">
-  <tr>
-    <th>name</th>
-    <td>DMM</td>
-  </tr>
-  <tr>
-    <th>introduction</th>
-    <td>頑張ります！</td>
-  </tr>
-</table>
+
+<% @users.each do |user| %>
+  <p><%= user.profile_image_id %></p>
+  <table class="table">
+    <tr>
+      <th>name</th>
+      <td><%= user.name %></td>
+    </tr>
+    <tr>
+      <th>introduction</th>
+      <td><%= user.introduction %></td>
+    </tr>
+  </table>
+<% end %>
 
 <!-- 編集へ -->
 <div class="row">

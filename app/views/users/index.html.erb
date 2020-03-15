@@ -9,11 +9,30 @@
 
       <!-- User info --><!-- User info --><!-- User info --><!-- User info -->
     <div class="col-xs-9">
+    <h2>Users</h2>
+      <div class="alt-table-responsive">
+        <table class="table">
+          <tr>
+            <th class="col-xs-2">image</th>
+            <th class="col-xs-4">name</th>
+            <th class="col-xs-6 ml-5"></th>
+          </tr>
+            <!-- form_forを使う？ -->
+            
+          <tr>
+            <td class="col-xs-2">people</td>
+            <td class="col-xs-4">shoto</td>
+            <td class="col-xs-6 ml-5"><%= link_to "Show", users_path %></td>
+          </tr>
+            <!-- form_forを使う？ -->
+        </table>
+      </div>
+    </div>
     <% @users.each do |user| %>
       <tr>
         <td><%= user.profile_image_id %></td>
         <td><%= user.name %></td>
-        <td><%= link_to "Show", users_path %></td>           <%# クリックされたらshow画面に移動 %>
+        <td></td>           <%# クリックされたらshow画面に移動 %>
       </tr>
     <% end %>
     </div>
