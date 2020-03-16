@@ -6,7 +6,9 @@
 
     <!-- User info --><!-- User info --><!-- User info --><!-- User info -->
     <div class="col-xs-3">
-      <%= render 'books/info', book: @book %>
+      <%= render 'books/info', {book: @book ,user: @user} %>
+
+  
     </div>
       <!-- User info --><!-- User info --><!-- User info --><!-- User info -->
 
@@ -15,19 +17,21 @@
       <h2>Books</h2>
       <div class="alt-table-responsive">
         <table class="table">
+          <tr>
+            <th class="col-xs-2"></th>
+            <th class="col-xs-4">Title</th>
+            <th class="col-xs-6">Opinion</th>
+          </tr>
+          <!-- each doを使う？ -->
+          
+          <% @books.each do |b| %>
             <tr>
-              <th class="col-xs-2"></th>
-              <th class="col-xs-4">Title</th>
-              <th class="col-xs-6">Opinion</th>
+              <td class="col-xs-2">image</td>
+              <td class="col-xs-4"><%= link_to "#{b.title}", book_path(b.id) %></td>
+              <td class="col-xs-6"><%= b.body %></td>
             </tr>
-              <!-- form_forを使う？ -->
-              
-            <tr>
-              <td class="col-xs-2"></td>
-              <td class="col-xs-4"></td>
-              <td class="col-xs-6"></td>
-            </tr>
-              <!-- form_forを使う？ -->
+          <% end %>
+          <!-- each doを使う？ -->
         </table>
         </div>
       </div>

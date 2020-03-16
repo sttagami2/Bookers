@@ -4,7 +4,7 @@
 
     <!-- User info --><!-- User info --><!-- User info --><!-- User info -->
     <div class="col-xs-3">
-      <%= render 'books/info', book: @book %>
+      <%= render 'books/info', {book: @book, user: @user} %>
     </div>
 
       <!-- User info --><!-- User info --><!-- User info --><!-- User info -->
@@ -28,14 +28,5 @@
         </table>
       </div>
     </div>
-    <% @users.each do |user| %>
-      <tr>
-        <td><%= user.profile_image_id %></td>
-        <td><%= user.name %></td>
-        <td></td>           <%# クリックされたらshow画面に移動 %>
-      </tr>
-    <% end %>
-    </div>
-
-    </div>
   </div>
+</div>

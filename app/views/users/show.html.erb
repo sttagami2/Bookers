@@ -6,7 +6,7 @@
 
     <!-- User info --><!-- User info --><!-- User info --><!-- User info -->
     <div class="col-xs-3">
-      <%= render 'books/info', book: @book %>
+      <%= render 'books/info', {book: @book, user: @user} %>
     </div>
       <!-- User info --><!-- User info --><!-- User info --><!-- User info -->
     
@@ -23,11 +23,13 @@
             <th class="col-xs-6">Opinion</th>
           </tr>
           <!-- form_forを使う？ -->
-          <tr>
-            <th class="col-xs-2"></th>
-            <th class="col-xs-4"></th>
-            <th class="col-xs-6"></th>
-          </tr>
+          <% @books.each do |b| %>
+            <tr>
+              <td class="col-xs-2">image</td>
+              <td class="col-xs-4"><%= link_to "#{b.title}", book_path(b.id) %></td>
+              <td class="col-xs-6"><%= b.body %></td>
+            </tr>
+          <% end %>
           <!-- form_forを使う？ -->
           
         </table>

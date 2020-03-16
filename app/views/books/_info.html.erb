@@ -1,7 +1,7 @@
 <h2>User info</h2>
 
-<% @users.each do |user| %>
-  <p><%= user.profile_image_id %></p>
+<%# user.each do |u| %>
+  <p>  <%= attachment_image_tag user, :profile_image_id, :fill, 60, 60, fallback: "no_image.jpg", size: '100x100', class: "img-circle pull-left profile-img"%></p>
   <table class="table">
     <tr>
       <th>name</th>
@@ -12,44 +12,37 @@
       <td><%= user.introduction %></td>
     </tr>
   </table>
-<% end %>
+<%# end %>
 
 <!-- 編集へ -->
 <div class="row">
-  <div class="col-xs-12 btn btn-default glyphicon glyphicon-wrench">
-    <% link_to edit_user_path(current_user.id) %>
-  </div>
+  <%= link_to edit_user_path(current_user.id), class: 'col-xs-12 btn btn-default' do %>
+    <i class="glyphicon glyphicon-wrench"></i>
+  <% end %>
 </div>
 <!-- 編集へ -->
 
 <h2>New book</h2>
-<%= form_for(book) do |f| %>
+    <%= form_for(book) do |f| %>
 
-  <%# バリデーション %>
-  <% if book.errors.any? %>
-    <h3><%= book.errors.count %>errors prohibited this book from being saved:</h3>
-    <ul>
-      <% book.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-    </ul>
-  <% end %>
-  <%# バリデーション %>
-  <div class="row">
-    <p>Title</p>
-    <%= f.text_field :title, class: 'col-xs-12' %>
-    <%# 入力フォームを作成 %>
-  </div>
+    <%# バリデーション %>
+  
+    <%# バリデーション %>
+    <div class="row">
+      <p>Title</p>
+      <%= f.text_field :title, class: 'col-xs-12' %>
+      <%# 入力フォームを作成 %>
+    </div>
 
-  <div class="row mb-5">
-    <p>Opinion</p>
-    <%= f.text_area :body, class: 'col-xs-12' %>
-    <%# 入力フォームを作成 %>
-  </div>
+    <div class="row mb-5">
+      <p>Opinion</p>
+      <%= f.text_area :body, class: 'col-xs-12' %>
+      <%# 入力フォームを作成 %>
+    </div>
 
-  <div class="row">
-    <%= f.submit('Create Book', class: 'btn btn-primary btn-block col-xs-12') %>
-    <%# クリエイトをクリックされたらshowページに移行 %>
-  </div>
+    <div class="row">
+      <%= f.submit 'Create Book', class: 'col-xs-12 btn btn-primary' %>
+      <%# クリエイトをクリックされたらshowページに移行 %>
+    </div>
 
-<% end %>  
+    <% end %>  

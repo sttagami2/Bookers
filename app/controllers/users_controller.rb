@@ -1,29 +1,21 @@
 class UsersController < ApplicationController
   def index
     @users = User.all
+    @user = User.find(current_user.id)
+    #@user = current_user でも良い
     @book = Book.new
     @books = Book.all
   end
 
-  def create
-    # @user = User.new(user_params)
-    # post_book = 
-    # if @book.save
-    #   flash[:notice] = "You have created book successfully."
-    #   redirect_to book_path(@book.id)        # Show.htmlの画面に移行
-    # else
-    #   @books = Book.all   
-    #   render :index                         # renderはコントローラを介さずにViewへデータを返す → 返すデータをrender前に定義すること！
-    # end
-  end
-
+ 
   def show
     @book = Book.new
     @books = Book.all
+    @user = User.find(current_user.id)
   end
 
   def edit
-    @user = User.find(params[:id])
+    @user = User.find(current_user.id)
   end
 
   def new
@@ -39,6 +31,6 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:name, :introduction, :profile_image_id, :image)
+    params.require(:user).permit(:name, :introduction, :profile_image_id)
   end     # ← 記述忘れがち！
 end
