@@ -17,14 +17,17 @@
             <th class="col-xs-4">name</th>
             <th class="col-xs-6 ml-5"></th>
           </tr>
-            <!-- form_forを使う？ -->
+          <!-- form_forを使う？ -->
             
-          <tr>
-            <td class="col-xs-2">people</td>
-            <td class="col-xs-4">shoto</td>
-            <td class="col-xs-6 ml-5"><%= link_to "Show", users_path %></td>
-          </tr>
-            <!-- form_forを使う？ -->
+
+          <% @users.each do |u| %>
+            <tr>
+              <td class="col-xs-2"><%= attachment_image_tag u, :profile_image, size: '50x50', fallback: "no_image.jpg"%></td>
+              <td class="col-xs-4"><%= u.name %></td>
+              <td class="col-xs-6"><%= link_to "Show", user_path(u.id) %></td>
+            </tr>
+          <% end %>
+          <!-- form_forを使う？ -->
         </table>
       </div>
     </div>

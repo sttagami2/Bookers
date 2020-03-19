@@ -1,7 +1,7 @@
 <h2>User info</h2>
 
 <%# user.each do |u| %>
-  <p>  <%= attachment_image_tag user, :profile_image_id, :fill, 60, 60, fallback: "no_image.jpg", size: '100x100', class: "img-circle pull-left profile-img"%></p>
+  <p><%= attachment_image_tag user, :profile_image, :fill, 60, 60, fallback: "no_image.jpg", size: '100x100', class: "img-circle pull-left profile-img"%></p>
   <table class="table">
     <tr>
       <th>name</th>
@@ -23,11 +23,9 @@
 <!-- 編集へ -->
 
 <h2>New book</h2>
-    <%= form_for(book) do |f| %>
+  <%= form_for(book) do |f| %>
 
-    <%# バリデーション %>
-  
-    <%# バリデーション %>
+
     <div class="row">
       <p>Title</p>
       <%= f.text_field :title, class: 'col-xs-12' %>
@@ -45,4 +43,4 @@
       <%# クリエイトをクリックされたらshowページに移行 %>
     </div>
 
-    <% end %>  
+  <% end %>  

@@ -16,6 +16,10 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
+.jumbotron {
+  background-color: white;
+}
+
 .header {
   background-color: black;
   height: 60px;

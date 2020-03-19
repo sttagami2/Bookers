@@ -58,14 +58,14 @@
             <li class="">
               <div class="row">
               <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
-                <%= link_to "Home", new_user_path %>
+                <%= link_to "Home", "/" %>
               </div>
             </li>
 
             <li class="">
               <div class="row">
                 <span class="glyphicon glyphicon-link" aria-hidden="true"></span>
-                <%= link_to "About", new_user_path, method: :index %>
+                <%= link_to "About", "/home/about" %>
               </div>
             </li>
 
@@ -88,6 +88,11 @@
         </ul>
       </div>
     </header>
+    <% if flash[:notice] %>
+      <div class="flash">
+        <%= flash[:notice] %>
+      </div>
+    <% end %>
     <%= yield %>
   </body>
   <footer　class="footer fixed-bottom">

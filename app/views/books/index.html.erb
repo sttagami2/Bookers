@@ -1,5 +1,14 @@
 <%# Homeページ %>
-
+<%# バリデーション %>
+<% if @book_error.errors.any? %>
+  <h3><%= @book_error.errors.count %>errors prohibited this book from being saved:</h3>
+  <ul>
+    <% @book_error.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+  </ul>
+<% end %>
+<%# バリデーション %>
 <div class="container">
   
   <div class="row">
@@ -7,6 +16,7 @@
     <!-- User info --><!-- User info --><!-- User info --><!-- User info -->
     <div class="col-xs-3">
       <%= render 'books/info', {book: @book ,user: @user} %>
+      
 
   
     </div>
@@ -26,7 +36,11 @@
           
           <% @books.each do |b| %>
             <tr>
-              <td class="col-xs-2">image</td>
+              <td class="col-xs-2">
+                <%= link_to  user_path(b.user.id) do %>
+                  <%= attachment_image_tag b.user, :profile_image, size: '50x50', fallback: "no_image.jpg" %>
+                <% end %>
+              </td>
               <td class="col-xs-4"><%= link_to "#{b.title}", book_path(b.id) %></td>
               <td class="col-xs-6"><%= b.body %></td>
             </tr>

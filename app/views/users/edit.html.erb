@@ -4,12 +4,20 @@
 
   <%# form_for %>
   <%= form_for(@user) do |f| %>
+    <% if @user.errors.any? %>
+      <h3><%= @user.errors.count %>errors prohibited this book from being saved:</h3>
+      <ul>
+        <% @user.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    <% end %>
     <p>Name</p>
     <%= f.text_field :name %>
     <%# title情報が反映されている入力フォームを下に作成 %>
 
     <p>Image</p>
-    <%= f.file_field :image %>
+    <%= f.attachment_field :profile_image %>
     <%# body情報が反映されている入力フォームを下に作成 %>
     
     <div class=".row">

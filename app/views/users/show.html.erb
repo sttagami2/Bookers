@@ -25,7 +25,11 @@
           <!-- form_forを使う？ -->
           <% @books.each do |b| %>
             <tr>
-              <td class="col-xs-2">image</td>
+              <td class="col-xs-2">
+                <%= link_to user_path(@user) do %>
+                  <%= attachment_image_tag @user, :profile_image, size: '50x50', fallback: "no_image.jpg"%>
+                <% end %>
+              </td>
               <td class="col-xs-4"><%= link_to "#{b.title}", book_path(b.id) %></td>
               <td class="col-xs-6"><%= b.body %></td>
             </tr>

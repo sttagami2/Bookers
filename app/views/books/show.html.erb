@@ -1,3 +1,5 @@
+
+
 <div class="container">
   
   <div class="row">
@@ -5,6 +7,7 @@
     <!-- User info --><!-- User info --><!-- User info --><!-- User info -->
     <div class="col-xs-3">
       <%= render 'books/info', {book: @book, user: @user} %>
+    
     </div>
     <!-- User info --><!-- User info --><!-- User info --><!-- User info -->
 
@@ -17,13 +20,34 @@
       <div class="alt-table-responsive">
         <table class="table">
           <!-- form_forを使う？ -->
+          <% if @detail_book.user == current_user %>
             <tr>
-              <td class="col-xs-3">image</td>
-              <td class="col-xs-2"><%= link_to "#{@book.title}", book_path(@book.id) %></td>
-              <td class="col-xs-3"><%= @book.body %></td>
-              <td class="col-xs-2"><%= link_to "Edit", edit_book_path(@book) %></td>
-              <td class="col-xs-2"><%= link_to "Destroy", books_path, method: :delete, "data-confirm" => "本当に消しますか？" %></td>
+              <td class="col-xs-3">
+                <%= link_to  user_path(@detail_book.user) do %>
+                  <%= attachment_image_tag @detail_book.user, :profile_image, size: '50x50', fallback: "no_image.jpg"%>
+                <% end %>
+                <br>
+                <%= link_to "#{@detail_book.user.name}", user_path(@detail_book.user) %>
+              </td>
+              <td class="col-xs-2"><%= link_to "#{@detail_book.title}", book_path(@detail_book.id) %></td>
+              <td class="col-xs-3"><%= @detail_book.body %></td>
+              <td class="col-xs-2"><%= link_to "Edit", edit_book_path(@detail_book) %></td>
+              <td class="col-xs-2"><%= link_to "Destroy", book_path(@detail_book), method: :destroy, "data-confirm" => "本当に消しますか？" %></td>
             </tr>
+          <% else %>
+            <tr>
+              <td class="col-xs-4">
+                <%= link_to  user_path(@detail_book.user) do %>
+                  <%= attachment_image_tag @detail_book.user, :profile_image, size: '50x50', fallback: "no_image.jpg"%>
+                <% end %>
+                <br>
+                <%= link_to "#{@detail_book.user.name}", user_path(@detail_book.user) %>
+              </td>
+              <td class="col-xs-3"><%= link_to "#{@detail_book.title}", book_path(@detail_book.id) %></td>
+              <td class="col-xs-5"><%= @detail_book.body %></td>
+            </tr>
+          <% end %>
+
 
           <!-- form_forを使う？ -->
           
