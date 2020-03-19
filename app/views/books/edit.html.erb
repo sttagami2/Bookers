@@ -1,0 +1,31 @@
+
+<h2>Editing Book</h2>
+
+ <%= form_for(@book) do |f| %>
+  <% if @book.errors.any? %>
+    <h3><%= @book.errors.count %>errors prohibited this book from being saved:</h3>
+    <ul>
+      <% @book.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  <% end %>
+  <p>Title</p>
+  <%= f.text_field :title %>
+  <%# title情報が反映されている入力フォームを下に作成 %>
+
+  <p>Opinion</p>
+  <%= f.text_area :body %>
+  <%# body情報が反映されている入力フォームを下に作成 %>
+
+  <%= f.submit 'Update Book' %>
+<% end %>
+<span>
+  <p>
+    <span class="block"><%= link_to "Show", book_path(@book) %></span>
+    <%# @booksはコントローラから送られてきた情報が格納されている！ %>
+    |
+    <span class="block"><%= link_to "Back", books_path %></span>
+    <%# link_toの記述の仕方はいくつかある！ → 分からなくなったらlink_toで検索！ %>
+  </p>
+</div>
